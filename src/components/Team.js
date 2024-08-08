@@ -12,10 +12,10 @@ const teamMembers = [
     web:'https://neima-nesru.github.io/my-portfolio-website/'
   },
   {
-    name: 'John Doe',
+    name: 'Ubeyd Nesru',
     role: 'Creative Director',
     image: member2,
-    description: 'John is responsible for overseeing all creative projects, ensuring they meet the highest standards. His expertise in design and his ability to inspire the team makes him an invaluable asset to Nimet Graphics.',
+    description: 'Ubeyd is responsible for overseeing all creative projects, ensuring they meet the highest standards. His expertise in design and his ability to inspire the team makes him an invaluable asset to Nimet Graphics.',
   },
 ];
 
