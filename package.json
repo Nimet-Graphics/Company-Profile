@@ -1,4 +1,5 @@
 {
+  "homepage": "./",
   "name": "company-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -12,6 +13,7 @@
     "@testing-library/user-event": "^13.5.0",
     "autoprefixer": "^10.4.20",
     "framer-motion": "^11.3.23-alpha.2",
+    "gh-pages": "^6.1.1",
     "postcss": "^8.4.41",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -23,7 +25,6 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "homepage": "https://Nimet-Graphics.github.io/Nimet-Graphics",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
