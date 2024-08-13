@@ -87,13 +87,13 @@ const Services = () => {
         </div>
       </div>
 
-      <a href='/services' className="flex justify-end mt-8 mr-4">
+      <Link to='/services' className="flex justify-end mt-8 mr-4">
         <button 
               className="bg-primary text-white font-semibold px-4 py-2 rounded"
             >
-              Show More Works <FaArrowRight className='text-white inline ml-1'/>
+              Show More Services <FaArrowRight className='text-white inline ml-1'/>
             </button>
-        </a>
+        </Link>
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import aboutImage from '../assets/office.png'; 
+import { Link } from 'react-router-dom';
 
 const About = () => {
   const sectionVariant = {
@@ -42,7 +43,7 @@ const About = () => {
             </p>
             <p className="text-sm sm:text-md mb-4 sm:mb-6 leading-relaxed">
               We take pride in our ability to merge creativity with strategy, crafting designs that not only look great but also drive results. Whether it’s a logo, a website, or a full branding package, we’re here to help you make a lasting impression.
-              <a href='/about' className="inline text-secondary border-b border-secondary-dot ml-2">Read More</a>
+              <Link to='/about' className="inline text-purple-500 border-b border-secondary-dot ml-2">Read More</Link>
             </p>
           </motion.div>
         </div>

@@ -28,7 +28,7 @@ const Hero = () => {
         </motion.p>
         <motion.a
           href="tel:+251974436829"
-          className="bg-primary text-white px-4 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded font-bold text-base sm:text-lg md:text-xl hover:opacity-80 transition duration-500"
+          className="bg-primary text-white px-4 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded font-bold text-base sm:text-lg md:text-xl hover:opacity-70 transition duration-500"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.4, ease: 'easeOut' }}

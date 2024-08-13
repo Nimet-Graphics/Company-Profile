@@ -70,12 +70,7 @@ const Portfolio = () => {
                   {project.title}
                 </h2>
                 <p className="text-gray-600 mb-4">{project.description}</p>
-                <a
-                  href={project.link}
-                  className="text-primary font-semibold hover:underline"
-                >
-                  View Project
-                </a>
+                
               </div>
             </motion.div>
           ))}

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
@@ -13,9 +13,9 @@ const Header = () => {
   return (
     <header className='fixed top-0 left-0 right-0 bg-white border-b shadow-md z-50'>
       <nav className=' container flex justify-between items-center px-8 py-5 mx-auto'>
-        <a href='/' alt='company-logo'>
+        <Link to='/' alt='company-logo'>
           <img src={logo} alt='Nimet-Graphics' className='h-6 w-9 ml-12 mt-1' />
-        </a>
+        </Link>
 
         {/* Hamburger Icon for mobile view */}
         <div className='md:hidden' onClick={toggleMenu}>
@@ -29,24 +29,24 @@ const Header = () => {
           } md:opacity-100 md:visible`}
         >
           <li className='md:my-0 my-4'>
-            <a exact href='/' className='hover:text-primary transition-colors duration-500' activeClassName='text-primary'>
+            <Link to='/' className='hover:text-primary transition-colors duration-500' activeClassName='text-primary'>
               Home
-            </a>
+            </Link>
           </li>
           <li className='md:my-0 my-4'>
-            <a exact href='/about' className='hover:text-primary transition-colors duration-500' activeClassName='text-primary'>
+            <Link to='/about' className='hover:text-primary transition-colors duration-500' activeClassName='text-primary'>
               About
-            </a>
+            </Link>
           </li>
           <li className='md:my-0 my-4'>
-            <a exact href='/portfolio' className='hover:text-primary transition-colors duration-500' activeClassName='text-primary'>
+            <Link to='/portfolio' className='hover:text-primary transition-colors duration-500' activeClassName='text-primary'>
               Portfolio
-            </a>
+            </Link>
           </li>
           <li className='md:my-0 my-4'>
-            <a exact href='/services' className='hover:text-primary transition-colors duration-500' activeClassName='text-primary'>
+            <Link to='/services' className='hover:text-primary transition-colors duration-500' activeClassName='text-primary'>
               Services
-            </a>
+            </Link>
           </li>
           {/* <li className='md:my-0 my-4'>
             <NavLink to='/blog' className='hover:text-primary transition-colors duration-500' activeClassName='text-primary'>
@@ -54,9 +54,9 @@ const Header = () => {
             </NavLink>
           </li> */}
           <li className='md:my-0 my-4'>
-            <a exact href='/contact' className='hover:text-primary transition-colors duration-500' activeClassName='text-primary'>
+            <Link to='/contact' className='hover:text-primary transition-colors duration-500' activeClassName='text-primary'>
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>

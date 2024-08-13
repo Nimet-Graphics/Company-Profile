@@ -3,8 +3,9 @@ import {
   FaInstagram,
   FaFacebookF,
   FaLinkedinIn,
-  FaBehance,
+  FaTelegram,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -14,29 +15,29 @@ const Footer = () => {
           <h3 className="text-2xl font-roboto font-bold mb-4">Nimet Graphics</h3>
           <ul className="space-y-2">
             <li>
-              <a href="/portfolio" className="font-roboto hover:text-purple-700">
+              <Link to="/portfolio" className="font-roboto hover:text-purple-700">
                 Portfolio
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/about" className="font-roboto hover:text-purple-700">
+              <Link to="/about" className="font-roboto hover:text-purple-700">
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/services" className="font-roboto hover:text-purple-700">
+              <Link to="/services" className="font-roboto hover:text-purple-700">
                 Services
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/blog" className="font-roboto hover:text-purple-700">
+              <Link to="/blog" className="font-roboto hover:text-purple-700">
                 Blog
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#contact" className="font-roboto hover:text-purple-700">
+              <Link to="/contact" className="font-roboto hover:text-purple-700">
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -45,19 +46,19 @@ const Footer = () => {
           <h3 className="text-2xl font-roboto font-bold mb-4">More</h3>
           <ul className="space-y-2">
             <li>
-              <a href="/faq" className="hover:text-purple-700 font-roboto">
+              <Link to="/faq" className="hover:text-purple-700 font-roboto">
                 FAQ
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/support" className="hover:text-purple-700 font-roboto">
+              <Link to="/support" className="hover:text-purple-700 font-roboto">
                 Support
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/feedback" className="hover:text-purple-700 font-roboto">
+              <Link to="/feedback" className="hover:text-purple-700 font-roboto">
                 Feedback
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -70,9 +71,9 @@ const Footer = () => {
             <input
               type="email"
               placeholder="Enter your email"
-              className="w-full sm:w-auto bg-gray-200 px-4 py-2 rounded-md sm:rounded-l-md sm:rounded-r-none focus:outline-none"
+              className="w-full text-black sm:w-auto bg-gray-200 px-4 py-2 rounded-md sm:rounded-l-md sm:rounded-r-none focus:outline-none"
             />
-            <button className="bg-purple-700 hover:bg-opacity-80 px-4 py-2 rounded-md sm:rounded-r-md sm:rounded-l-none mt-4 sm:mt-0 w-full sm:w-auto">
+            <button className="bg-primary hover:bg-opacity-80 px-4 py-2 rounded-md sm:rounded-r-md sm:rounded-l-none mt-4 sm:mt-0 w-full sm:w-auto">
               Subscribe
             </button>
           </div>
@@ -84,30 +85,30 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center text-center gap-4">
           {/* Social Icons */}
           <div className="flex space-x-4">
-            <a
-              href="https://www.instagram.com"
+            <Link
+              to="https://www.instagram.com/nimetgraphics"
               className="text-gray-400 hover:text-purple-700 hover:underline"
             >
               <FaInstagram />
-            </a>
-            <a
-              href="https://www.facebook.com"
+            </Link>
+            <Link
+              to="https://www.facebook.com/Nimet Graphics"
               className="text-gray-400 hover:text-purple-700 hover:underline"
             >
               <FaFacebookF />
-            </a>
-            <a
-              href="https://www.linkedin.com"
+            </Link>
+            <Link
+              to="https://www.linkedin.com/in/nimet-graphics-a951b7318"
               className="text-gray-400 hover:text-purple-700 hover:underline"
             >
               <FaLinkedinIn />
-            </a>
-            <a
-              href="https://www.behance.net"
+            </Link>
+            <Link
+              to="https://t.me/nimetgraphicss"
               className="text-gray-400 hover:text-purple-700 hover:underline"
             >
-              <FaBehance />
-            </a>
+              <FaTelegram />
+            </Link>
           </div>
 
           {/* Copyright */}
