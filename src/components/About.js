@@ -39,7 +39,7 @@ const About = () => {
               About Nimet Graphics
             </h2>
             <p className="text-sm sm:text-md mb-4 sm:mb-6 leading-relaxed">
-              At Nimet Graphics, we are passionate about creating exceptional visual experiences that captivate and engage. Founded in 2020, we have been dedicated to delivering innovative design solutions that help brands stand out. Our team of creative professionals brings a wealth of experience and expertise to every project, ensuring that each design is not only visually stunning but also strategically aligned with our clients' goals.
+              At Nimet Graphics, we are passionate about creating exceptional visual experiences that captivate and engage. Founded in 2023, we have been dedicated to delivering innovative design solutions that help brands stand out. Our team of creative professionals brings a wealth of experience and expertise to every project, ensuring that each design is not only visually stunning but also strategically aligned with our clients' goals.
             </p>
             <p className="text-sm sm:text-md mb-4 sm:mb-6 leading-relaxed">
               We take pride in our ability to merge creativity with strategy, crafting designs that not only look great but also drive results. Whether it’s a logo, a website, or a full branding package, we’re here to help you make a lasting impression.
