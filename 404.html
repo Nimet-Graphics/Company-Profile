@@ -7,7 +7,7 @@
     <script type="text/javascript">
       // JavaScript Redirect
       var path = window.location.pathname;
-      var redirectTo = window.location.origin + "/";
+      var redirectTo = window.location.origin + process.env.PUBLIC_URL + "/";
 
       // If the path is not just the root, append index.html
       if (path !== "/") {
