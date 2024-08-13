@@ -14,9 +14,9 @@ import Hero from './components/Hero';
 
 const App = () => {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Header />
-      <Hero/>
+      <Hero />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
@@ -25,7 +25,7 @@ const App = () => {
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </Router>
   );
 };

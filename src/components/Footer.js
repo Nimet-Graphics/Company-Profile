@@ -8,7 +8,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-primary text-white pt-12 pb-8 px-6 md:px-12">
+    <footer className="bg-black text-white pt-12 pb-8 px-6 md:px-12">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-start gap-8">
         <div>
           <h3 className="text-2xl font-roboto font-bold mb-4">Nimet Graphics</h3>
