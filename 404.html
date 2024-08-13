@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting...</title>
+    <meta http-equiv="refresh" content="0; url=/" />
+    <script type="text/javascript">
+      // JavaScript Redirect
+      var path = window.location.pathname;
+      var redirectTo = window.location.origin + "/";
+
+      // If the path is not just the root, append index.html
+      if (path !== "/") {
+        redirectTo = window.location.origin + path.replace(/\/$/, "") + "/index.html";
+      }
+
+      // Redirect
+      window.location.href = redirectTo;
+    </script>
+  </head>
+  <body></body>
+</html>
