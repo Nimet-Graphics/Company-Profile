@@ -1,21 +1,32 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaQuoteLeft } from 'react-icons/fa';
-import test1 from '../assets/testimonials/HK.jpg';
-import test2 from '../assets/testimonials/ZH.jpeg';
+import test1 from '../assets/testimonials/makeup.jpg';
+import test2 from '../assets/testimonials/freshman.jpg';
+import test3 from '../assets/testimonials/print.jpg';
 
 const Testimonials = () => {
   const testimonials = [
+
     {
-      name: 'Zeynu Hassen',
-      role: 'Entrepreneur',
-      testimonial: 'Nimet Graphics transformed my brand with their stunning design work. Highly recommended!',
+      link:'https://www.google.com/search?client=opera&q=nimet+graphics&sourceid=opera&ie=UTF-8&oe=UTF-8#',
+      name: 'Akrem M.',
+      role: 'Programmer',
+      testimonial: 'Thanks a lot, I got beautifully and impressive logo from Nimet Graphics, and I want to give other graphics works for them because They are good on it!',
       image: test2,
     },
     {
-      name: 'Habiba Kedir',
-      role: 'Marketing Director',
-      testimonial: 'The creativity and professionalism at Nimet Graphics are unmatched. I’m thrilled with the results!',
+      link:'https://www.google.com/search?client=opera&q=nimet+graphics&sourceid=opera&ie=UTF-8&oe=UTF-8#',
+      name: 'Abdulhakim J.',
+      role: 'Print Operator',
+      testimonial: 'Warm greeting for Nimet Graphics Designers. I find myself reflecting on all the reasons I\'m grateful, and one of the highlights of this year has been your exceptional Gaphics Service.',
+      image:test3
+    },    
+    {
+      link:'https://www.google.com/search?client=opera&q=nimet+graphics&sourceid=opera&ie=UTF-8&oe=UTF-8#',
+      name: 'Lidia W.',
+      role: 'Makeup Artist',
+      testimonial: 'Delivers high-quality businesscard designs with excellent attention to detail and a keen understanding of my needs! Thanks',
       image: test1,
     },
   ];
@@ -68,9 +79,11 @@ const Testimonials = () => {
                   </div>
                   <div className="flex-1 text-left">
                     <FaQuoteLeft className="text-xl text-primary mb-4" />
+                    <a href={testimonial.link}>
                     <p className="text-lg leading-relaxed text-gray-700 transition-opacity duration-300">
                       {testimonial.testimonial}
                     </p>
+                    </a>
                     <h3 className="text-black font-bold text-lg md:text-xl mt-4 transition-opacity duration-300">
                       {testimonial.name}
                     </h3>

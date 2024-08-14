@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { MdStar, MdDesignServices, MdLogoDev, MdBrandingWatermark } from 'react-icons/md';
+import { MdDesignServices, MdBrandingWatermark } from 'react-icons/md';
 import { FaBullhorn, FaBox, FaEnvelope, FaPaintBrush, FaCode } from 'react-icons/fa';
 
 
@@ -22,12 +22,7 @@ const Services = () => {
       transition: { staggerChildren: 0.2, delayChildren: 0.3 },
     },
   };
-
-  const itemVariant = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
-  };
-
+  
   return (
     <section className="py-16 bg-[#f9f9f9]">
       <div className="container mx-auto px-6">

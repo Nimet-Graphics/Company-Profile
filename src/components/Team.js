@@ -1,21 +1,28 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import member1 from '../assets/team/HK.jpg'; 
-import member2 from '../assets/team/ZH.jpeg'; 
+import member3 from '../assets/team/Husseyn.jpeg'; 
+import member2 from '../assets/team/ubeyd.jpg'; 
+import member1 from '../assets/team/neima.jpg'; 
 
 const teamMembers = [
   {
-    name: 'Neima Nesru',
+    name: 'Neima N.',
     role: 'Founder & Lead Designer',
     image: member1,
     description: 'Neima is the creative force behind Nimet Graphics, with a passion for crafting visually stunning designs. With years of experience in the design industry, Neima leads the team with a focus on innovation and client satisfaction.',
     web:'https://neima-nesru.github.io/my-portfolio-website/'
   },
   {
-    name: 'Ubeyd Nesru',
+    name: 'Ubeyd N.',
     role: 'Creative Director',
     image: member2,
     description: 'Ubeyd is responsible for overseeing all creative projects, ensuring they meet the highest standards. His expertise in design and his ability to inspire the team makes him an invaluable asset to Nimet Graphics.',
+  },
+  {
+    name: 'Husseyn Y.',
+    role: 'Manager',
+    image: member3,
+    description: 'Husseyn oversees all operational aspects at Nimet Graphics, ensuring that projects are executed efficiently and meet client expectations. His leadership and strategic vision drive the team\'s success and maintain the company\'s high standards."',
   },
 ];
 

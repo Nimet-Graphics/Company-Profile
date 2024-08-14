@@ -4,10 +4,7 @@ import aboutImage from '../assets/office.png';
 import { Link } from 'react-router-dom';
 
 const About = () => {
-  const sectionVariant = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
-  };
+
 
   return (
     <section className="py-12 sm:py-16 bg-[#f9f9f9]">
