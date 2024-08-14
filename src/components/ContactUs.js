@@ -25,7 +25,7 @@ const ContactUs = () => {
   };
 
   return (
-    <section className="py-8 md:py-16 bg-[#f9f9f9] mt-4">
+    <section className="py-8 md:py-16 mt-4">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8 md:mb-12">
           <motion.h2
@@ -47,12 +47,12 @@ const ContactUs = () => {
           </motion.p>
         </div>
 
-        <div className="flex flex-col lg:flex-row justify-center items-start lg:items-center gap-8 lg:gap-12">
+        <div className="container flex flex-col lg:flex-row justify-center items-start lg:items-center gap-8 lg:gap-12">
 
           <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, ease: 'easeOut' }}
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, delay: 0.2, ease: 'easeOut'}}
             className="w-full lg:w-1/2"
           >
             <h3 className="text-xl md:text-2xl font-semibold mb-4 md:mb-6 text-primary">
@@ -107,10 +107,10 @@ const ContactUs = () => {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, ease: 'easeOut' }}
-            className="w-full lg:w-1/2"
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, delay: 0.2, ease: 'easeOut'}}
+            className="w-full lg:w-1/4"
           >
             <h5 className="text-lg md:text-xl font-semibold mb-4 md:mb-6 text-primary">
               Contact Information

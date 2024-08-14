@@ -27,27 +27,35 @@ const servicesData = [
 const Services = () => {
   return (
     <div className='px-4 sm:px-6 md:px-8 mt-20'>
-      <div className='text-center'>              <motion.h2
+      <div className='text-center'>              
+        <motion.h2
           className="text-3xl font-bold mb-6 text-primary"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
-        >Our Top Services</motion.h2>
+        >Our Top Services
+        </motion.h2>
 
         <motion.p
           className="text-md mb-12 max-w-2xl mx-auto"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
-        > we offer a range of professional services tailored to meet your needs. </motion.p>
+        > we offer a range of professional services tailored to meet your needs. 
+        </motion.p>
       </div>
 
       <div className='container mx-auto'>
         <Carousel showArrows={true} infiniteLoop={true} showStatus={false} showIndicators={false} showThumbs={false} autoPlay={true} interval={5000} className='md:hidden'>
           {servicesData.map((service, index) => (
-            <div key={index} className='border rounded m-4 py-6 px-5 text-center'>
-              {service.icon}              <motion.h2
-          className="text-3xl font-bold mb-6 text-primary"
+            <motion.div key={index} 
+            className='border rounded m-4 py-6 px-5 text-center'
+             initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, delay: index * 0.2, ease: 'easeOut' }}>
+                {service.icon}              
+              <motion.h2
+          className="text-xl font-bold mb-6 text-primary"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
@@ -59,13 +67,17 @@ const Services = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
         >{service.description}</motion.p>
-            </div>
+            </motion.div>
           ))}
         </Carousel>
 
         <div className='hidden md:flex flex-row justify-center'>
           {servicesData.map((service, index) => (
-            <div key={index} className='border rounded m-4 md:m-10 py-6 px-5 w-full md:w-1/3 text-center'>
+            <motion.div key={index} 
+            className='border rounded m-4 md:m-10 py-6 px-5 w-full md:w-1/3 text-center'
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, delay: index * 0.2, ease: 'easeOut' }}>
               {service.icon}
               
 
@@ -82,7 +94,7 @@ const Services = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
         >{service.description}</motion.p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

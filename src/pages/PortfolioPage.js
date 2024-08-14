@@ -19,7 +19,9 @@ const Portfolio = () => {
   return (
     <section className="py-16 bg-[#f9f9f9]">
       <div className="container mx-auto px-6">
-        <motion.div
+        
+
+       <motion.div
           initial="hidden"
           animate="visible"
           variants={containerVariant}
@@ -32,7 +34,7 @@ const Portfolio = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
         >
-          Our Portfolio
+           Our Portfolio
         </motion.h2>
 
         <motion.p
@@ -41,12 +43,12 @@ const Portfolio = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
         >           
-         We take pride in our work. Below is a showcase of some of our most impactful and visually stunning projects. 
+                  We take pride in our work. Below is a showcase of some of our most impactful and visually stunning projects. 
         Each project was carefully crafted to meet the unique needs of o
         ur clients, highlighting our versatility and 
         commitment to excellence.
         </motion.p>
-        </motion.div>
+        </motion.div> 
 
         <motion.div
           initial="hidden"
@@ -57,7 +59,9 @@ const Portfolio = () => {
           {portfolioData.map((project, index) => (
             <motion.div
               key={index}
-              variants={itemVariant}
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, delay: index * 0.2, ease: 'easeOut'}}
               className="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-500"
             >
               <img

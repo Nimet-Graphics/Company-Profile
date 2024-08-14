@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import contactUsImg from '../assets/contactus.jpeg'
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -33,7 +32,12 @@ const ContactPage = () => {
   return (
     <section className="py-16 bg-[#f9f9f9]">
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 m-8">
+        <motion.div 
+        className="grid grid-cols-1 md:grid-cols-2 gap-12 m-8"
+        initial={{ opacity: 0, scale: 0.95 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.6, delay: 0.2, ease: 'easeOut'}}
+        >
           {/* Contact Form */}
           <motion.div
             className="md:pr-8"
@@ -106,14 +110,14 @@ const ContactPage = () => {
               style={{ maxHeight: '400px' }} // Adjust the maximum height as needed
             />
           </motion.div>
-          </div>
+          </motion.div>
 
           {/* Contact Details */}
           <motion.div
             className='mt-20 px-4 sm:px-6 md:px-8'
-            initial="hidden"
-            animate="visible"
-            variants={sectionVariant}
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, delay: 0.2, ease: 'easeOut'}}
           >
           <div className='text-center'>
             <h1 className="text-2xl md:text-3xl font-bold leading-tight mt-6 text-primary">Contact Us</h1>

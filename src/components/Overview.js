@@ -17,8 +17,9 @@ const CompanyOverview = () => {
         {/* Company History */}
         <motion.div
           className="flex flex-col md:flex-row items-center md:space-x-12 space-y-6 md:space-y-0"
-          initial="hidden"
-          animate="visible"
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6, delay: 0.2, ease: 'easeOut'}}
           variants={sectionVariant}
         >
           <div className="md:w-1/2">
@@ -37,8 +38,9 @@ const CompanyOverview = () => {
         {/* Vision */}
         <motion.div
           className="flex flex-col-reverse md:flex-row items-center md:space-x-12 space-y-6 md:space-y-0"
-          initial="hidden"
-          animate="visible"
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6, delay: 0.2, ease: 'easeOut'}}
           variants={sectionVariant}
         >
           <div className="md:w-1/2 w-full">
@@ -57,8 +59,9 @@ const CompanyOverview = () => {
         {/* Mission */}
         <motion.div
           className="flex flex-col md:flex-row items-center md:space-x-12 space-y-6 md:space-y-0"
-          initial="hidden"
-          animate="visible"
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6, delay:   0.2, ease: 'easeOut'}}
           variants={sectionVariant}
         >
           <div className="md:w-1/2">

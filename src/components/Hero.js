@@ -4,7 +4,10 @@ import banner from '../assets/banner.jpg';
 
 const Hero = () => {
   return (
-    <section
+    <motion.section
+    initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, delay: 0.2, ease: 'easeOut'}}
       className="relative h-screen bg-cover bg-center flex items-center justify-center"
       style={{ backgroundImage: `url(${banner})` }}
     >
@@ -19,7 +22,7 @@ const Hero = () => {
           Welcome to Nimet Graphics
         </motion.h1>
         <motion.p
-          className="text-base sm:text-lg md:text-xl mb-8 md:mb-12"
+          className="text-base sm:text-lg md:text-xl mb-16 md:mb-12"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2, ease: 'easeOut' }}
@@ -28,15 +31,15 @@ const Hero = () => {
         </motion.p>
         <motion.a
           href="tel:+251974436829"
-          className="bg-primary text-white px-4 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded font-bold text-base sm:text-lg md:text-xl hover:opacity-70 transition duration-500"
+          className="bg-primary text-white py-3 px-4 rounded hover:opacity-70 transition duration-100"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.4, ease: 'easeOut' }}
         >
-          Get Started
+          <button>Get Started</button>
         </motion.a>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

@@ -70,7 +70,9 @@ const Services = () => {
           {services.map((service, index) => (
             <motion.div
               key={index}
-              variants={itemVariant}
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, delay: index * 0.2, ease: 'easeOut'}}
               className="bg-white rounded-lg shadow-lg p-6 text-center transform hover:scale-105 transition-transform duration-500"
             >
               {service.icon}
