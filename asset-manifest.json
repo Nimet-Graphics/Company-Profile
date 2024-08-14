@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Company-Profile/static/css/main.f89adc5e.css",
-    "main.js": "/Company-Profile/static/js/main.1a6c6d88.js",
+    "main.js": "/Company-Profile/static/js/main.8b101992.js",
     "static/js/453.0b5e9e22.chunk.js": "/Company-Profile/static/js/453.0b5e9e22.chunk.js",
     "static/media/office.png": "/Company-Profile/static/media/office.e5862310f7a93c01a406.png",
     "static/media/wedding.jpg": "/Company-Profile/static/media/wedding.caf09935fe3760d1b5ad.jpg",
@@ -13,18 +13,22 @@
     "static/media/web-design.jpg": "/Company-Profile/static/media/web-design.7a7d80acfb2fb266d886.jpg",
     "static/media/work2.jpg": "/Company-Profile/static/media/work2.055ba81f9545537622f6.jpg",
     "static/media/work3.jpg": "/Company-Profile/static/media/work3.934b3c09ae5fbb2343b5.jpg",
+    "static/media/ubeyd.jpg": "/Company-Profile/static/media/ubeyd.513f7b568b76d2275865.jpg",
+    "static/media/makeup.jpg": "/Company-Profile/static/media/makeup.1056053d6c3ccb6b311d.jpg",
     "static/media/mission.avif": "/Company-Profile/static/media/mission.0fd834388eddaa6b7d18.avif",
-    "static/media/HK.jpg": "/Company-Profile/static/media/HK.f419a53780f79dd1a232.jpg",
+    "static/media/neima.jpg": "/Company-Profile/static/media/neima.f419a53780f79dd1a232.jpg",
     "static/media/history.jpg": "/Company-Profile/static/media/history.826a0bedb84ecb1de1f0.jpg",
+    "static/media/freshman.jpg": "/Company-Profile/static/media/freshman.f1fcbb43621e405b5c26.jpg",
     "static/media/banner.jpg": "/Company-Profile/static/media/banner.72d779a4349f6ed8390b.jpg",
     "static/media/vision.jpg": "/Company-Profile/static/media/vision.b147957bbaed8ec49fdc.jpg",
+    "static/media/print.jpg": "/Company-Profile/static/media/print.ddc932697bb2b8537c05.jpg",
     "index.html": "/Company-Profile/index.html",
     "main.f89adc5e.css.map": "/Company-Profile/static/css/main.f89adc5e.css.map",
-    "main.1a6c6d88.js.map": "/Company-Profile/static/js/main.1a6c6d88.js.map",
+    "main.8b101992.js.map": "/Company-Profile/static/js/main.8b101992.js.map",
     "453.0b5e9e22.chunk.js.map": "/Company-Profile/static/js/453.0b5e9e22.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f89adc5e.css",
-    "static/js/main.1a6c6d88.js"
+    "static/js/main.8b101992.js"
   ]
 }
