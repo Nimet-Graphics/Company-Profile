@@ -10,17 +10,17 @@ const servicesData = [
   {
     icon:<FaPaintBrush className="w-10 h-10 mx-auto mb-4 text-primary" />,
     title: 'DESIGN SOLUTIONS',
-    description: "From logo design and branding to print materials such as business cards, banners, flyers, and brochures, I specialize in creating visually striking assets."
+    description: "From logo design and branding to print materials such as business cards, banners, flyers, and brochures, We specialize in creating visually striking assets."
   },
   {
     icon:  <MdDesignServices className="w-10 h-10 mx-auto mb-4 text-primary" />,
     title: 'UX/UI',
-    description: "Whether you're looking for responsive design or user-friendly interfaces, I specialize in crafting websites that reflect your unique brand identity and engage your target audience."
+    description: "Whether you're looking for responsive design or user-friendly interfaces, We specialize in crafting websites that reflect your unique brand identity and engage your target audience."
   },
   {
     icon: <FaCode className="w-10 h-10 mx-auto mb-4 text-primary" />,
     title: 'WEB DEV\'T',
-    description: "An online presence for the business has become a must in today’s world. I build hybrid web apps that assure your online presence."
+    description: "An online presence for the business has become a must in today’s world. We build hybrid web apps that assure your online presence."
   }
 ];
 
