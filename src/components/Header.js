@@ -23,7 +23,7 @@ const Header = () => {
         </div>
 
         {/* Navigation Links */}
-        <ul
+        <ul  onClick={toggleMenu}
           className={`flex flex-col md:flex-row md:space-x-6 pl-10 md:pl-0 font-bold font-roboto absolute md:static bg-white top-full left-0 w-full md:w-auto md:bg-transparent transition-all duration-500 ease-in-out ${
             isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
           } md:opacity-100 md:visible`}

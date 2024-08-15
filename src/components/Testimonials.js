@@ -39,7 +39,11 @@ const Testimonials = () => {
 
   return (
     <div className="relative mt-16 px-4 text-center">
-      <div className="max-w-lg sm:max-w-xl md:max-w-2xl lg:max-w-4xl mx-auto">
+      <motion.div 
+       initial={{ opacity: 0, scale: 0.95 }}
+       whileInView={{ opacity: 1, scale: 1 }}
+       transition={{ duration: 0.6, delay: 0.2, ease: 'easeOut' }}
+       className="max-w-lg sm:max-w-xl md:max-w-2xl lg:max-w-4xl mx-auto">
         <motion.h2
           className="text-3xl font-bold mb-6 text-primary"
           initial={{ opacity: 0, y: -20 }}
@@ -111,7 +115,7 @@ const Testimonials = () => {
           ></motion.button>
           ))}
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

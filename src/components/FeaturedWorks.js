@@ -25,7 +25,11 @@ const projects = [
 const FeaturedWorks = () => {
   return (
     <section className="py-16 bg-gray-100">
-      <div className="container mx-auto text-center mb-12">
+      <motion.div 
+       initial={{ opacity: 0, scale: 0.95 }}
+       whileInView={{ opacity: 1, scale: 1 }}
+       transition={{ duration: 0.6, delay: 0.2, ease: 'easeOut' }}
+       className="container mx-auto text-center mb-12">
         <motion.h2
           className="text-3xl font-bold mb-6 text-primary"
           initial={{ opacity: 0, y: -20 }}
@@ -61,7 +65,7 @@ const FeaturedWorks = () => {
             </motion.div>
           ))}
         </div>
-      </div>
+      </motion.div>
       
         <Link to='/portfolio' className="flex justify-end mt-8 mr-4">
         <button 

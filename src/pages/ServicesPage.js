@@ -25,7 +25,11 @@ const Services = () => {
   
   return (
     <section className="py-16 bg-[#f9f9f9]">
-      <div className="container mx-auto px-6">
+      <motion.div 
+       initial={{ opacity: 0, scale: 0.95 }}
+       whileInView={{ opacity: 1, scale: 1 }}
+       transition={{ duration: 0.6, delay: 0.2, ease: 'easeOut' }}
+      className="container mx-auto px-6">
         <motion.div
           initial="hidden"
           animate="visible"
@@ -76,7 +80,7 @@ const Services = () => {
             </motion.div>
           ))}
         </motion.div>
-      </div>
+      </motion.div>
     </section>
   );
 };

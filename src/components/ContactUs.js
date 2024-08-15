@@ -26,7 +26,11 @@ const ContactUs = () => {
 
   return (
     <section className="py-8 md:py-16 mt-4">
-      <div className="container mx-auto px-4">
+      <motion.div 
+       initial={{ opacity: 0, scale: 0.95 }}
+       whileInView={{ opacity: 1, scale: 1 }}
+       transition={{ duration: 0.6, delay: 0.2, ease: 'easeOut' }}
+      className="container mx-auto px-4">
         <div className="text-center mb-8 md:mb-12">
           <motion.h2
             className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-primary"
@@ -143,7 +147,7 @@ const ContactUs = () => {
             </motion.p>
           </motion.div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

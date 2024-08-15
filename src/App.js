@@ -10,13 +10,13 @@ import PortfolioPage from './pages/PortfolioPage';
 import ServicesPage from './pages/ServicesPage';
 import BlogPage from './pages/BlogPage';
 import ContactPage from './pages/ContactPage';
-import Hero from './components/Hero';
+import HeroWrapper from './components/HeroWrapper';
 
 const App = () => {
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <Header />
-      <Hero />
+      <HeroWrapper />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />

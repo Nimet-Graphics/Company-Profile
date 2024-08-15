@@ -27,7 +27,11 @@ const servicesData = [
 const Services = () => {
   return (
     <div className='px-4 sm:px-6 md:px-8 mt-20'>
-      <div className='text-center'>              
+      <motion.div 
+       initial={{ opacity: 0, scale: 0.95 }}
+       whileInView={{ opacity: 1, scale: 1 }}
+       transition={{ duration: 0.6, delay: 0.2, ease: 'easeOut' }}
+      className='text-center'>              
         <motion.h2
           className="text-3xl font-bold mb-6 text-primary"
           initial={{ opacity: 0, y: -20 }}
@@ -43,7 +47,7 @@ const Services = () => {
           transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
         > we offer a range of professional services tailored to meet your needs. 
         </motion.p>
-      </div>
+      </motion.div>
 
       <div className='container mx-auto'>
         <Carousel showArrows={true} infiniteLoop={true} showStatus={false} showIndicators={false} showThumbs={false} autoPlay={true} interval={5000} className='md:hidden'>

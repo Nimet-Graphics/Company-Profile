@@ -12,7 +12,7 @@ const About = () => {
         <div className="flex flex-col-reverse md:flex-row items-center justify-center md:justify-between space-y-8 md:space-y-0">
           {/* About Image */}
           <motion.div
-            className="w-1/2 flex justify-center"
+            className="lg:w-1/2 w-full flex justify-center mt-4"
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2, ease: 'easeOut' }}
@@ -20,20 +20,20 @@ const About = () => {
             <img
               src={aboutImage}
               alt="About Us"
-              className="w-full rounded-lg shadow-lg w-full max-w-lg sm:max-w-md h-auto transition-opacity duration-300"
-              style={{ maxHeight: '300px', objectFit: 'cover' }} // Adjust the maximum height as needed
+              className="w-full rounded-lg shadow-lg sm:max-w-md h-auto transition-opacity duration-300"
+              style={{ maxHeight: '250px', objectFit: 'cover' }} 
             />
           </motion.div>
 
           {/* About Text */}
           <motion.div
-            className="md:w-1/2 md:pl-8 flex flex-col justify-center text-center md:text-left transition-opacity duration-300"
+            className="md:w-1/2 md:pl-8 flex flex-col justify-center text-justify md:text-left transition-opacity duration-300"
             initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay:  0.2, ease: 'easeOut' }}
           >
-            <h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4 sm:mb-6">
-              About Nimet Graphics
+            <h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4 sm:mb-6 text-center">
+              About Us
             </h2>
             <p className="text-sm sm:text-md mb-4 sm:mb-6 leading-relaxed">
               At Nimet Graphics, we are passionate about creating exceptional visual experiences that captivate and engage. Founded in 2023, we have been dedicated to delivering innovative design solutions that help brands stand out.
