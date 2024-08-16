@@ -4,6 +4,11 @@ import {
   FaFacebookF,
   FaLinkedinIn,
   FaTelegram,
+  FaTiktok,
+  FaYoutube,
+  FaPinterest,
+  FaDribbble,
+
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
@@ -85,30 +90,63 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center text-center gap-4">
           {/* Social Icons */}
           <div className="flex space-x-4">
+          <Link
+              to="https://t.me/nimetgraphicss"
+              className="text-gray-400 hover:text-purple-700 hover:underline"
+            >
+              <FaTelegram />
+            </Link>
+
+            <Link
+              to="https://www.linkedin.com/company/nimetgraphics"
+              className="text-gray-400 hover:text-purple-700 hover:underline"
+            >
+              <FaLinkedinIn />
+            </Link>
+
+            <Link
+              to="https://www.facebook.com/100095092532049/"
+              className="text-gray-400 hover:text-purple-700 hover:underline"
+            >
+              <FaFacebookF />
+            </Link>
+
             <Link
               to="https://www.instagram.com/nimetgraphics"
               className="text-gray-400 hover:text-purple-700 hover:underline"
             >
               <FaInstagram />
             </Link>
+
             <Link
-              to="https://www.facebook.com/Nimet Graphics"
+              to="https://www.tiktok.com/@nimetgraphics"
               className="text-gray-400 hover:text-purple-700 hover:underline"
             >
-              <FaFacebookF />
+              <FaTiktok />
             </Link>
+
             <Link
-              to="https://www.linkedin.com/in/nimet-graphics-a951b7318"
+              to="https://www.youtube.com/@nimetgraphics-x8k"
               className="text-gray-400 hover:text-purple-700 hover:underline"
             >
-              <FaLinkedinIn />
+              <FaYoutube />
             </Link>
+
             <Link
-              to="https://t.me/nimetgraphicss"
+              to="https://www.pinterest.com/nimetgraphics"
               className="text-gray-400 hover:text-purple-700 hover:underline"
             >
-              <FaTelegram />
+              <FaPinterest />
             </Link>
+
+            <Link
+              to="https://dribbble.com/nimetgraphics"
+              className="text-gray-400 hover:text-purple-700 hover:underline"
+            >
+              <FaDribbble />
+            </Link>
+
+
           </div>
 
           {/* Copyright */}
